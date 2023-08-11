@@ -1,0 +1,15 @@
+<div class="container">
+  <span class="title">PRINCIPALES TENDENCIAS</span>
+  <div class="slider">
+    <div *ngFor="let slider of sliders; let i = index" [ngClass]="{'slider-active': selectedIndex === i}">
+      <img [src]="slider.src" [alt]="slider.imageAlt" />
+      <div class="information">
+        <div class="description">
+          <span class="weight">{{ slider.title }}</span>
+          <span class="opacity">{{ slider.footwear }}</span>
+        </div>
+        <span class="weight">{{ slider.price }}</span>
+      </div>
+    </div>
+  </div>
+</div>

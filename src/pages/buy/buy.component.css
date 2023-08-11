@@ -1,0 +1,250 @@
+.container{
+    width: 96%;
+    margin: 4rem auto 0 auto;
+}
+
+.summary{
+    display: grid;
+    grid-template-columns: 2fr 1.2fr;
+    gap: 3rem;
+    padding: 0 5rem;
+}
+
+.summary .member{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #757575;
+    padding: 1rem;
+}
+
+.summary .member .slim{
+    opacity: .5;
+}
+
+.title{
+    color: #fb6920;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.underline{
+    text-decoration: underline;
+    color: #757575;
+    font-weight: 500;
+}
+
+
+.move{
+    margin-left: .5rem;
+}
+
+
+.bold{
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.summary .detail{
+    margin-top: 2rem;
+}
+
+
+.card{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+
+.informationBuy{
+    display: flex;
+    gap: 2rem;
+}
+
+.sizes{
+    display: flex;
+    gap: 1rem;
+}
+
+.sizes .Textbold{
+    font-weight: 500;
+    margin-left: .5rem;
+}
+
+.titleBold{
+    font-weight: 600;
+}
+
+.light{
+    opacity: .6;
+}
+
+.informationBuy .detailedInformation{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.informationBuy .detailedInformation .operations{
+    display: flex;
+    gap: 1rem;
+}
+
+
+.informationBuy .detailedInformation .operations span{
+    text-decoration: underline;
+    opacity: .5;
+}
+
+.informationBuy .detailedInformation .operations span:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+img{
+    width: 200px;
+    height: 200px;
+}
+
+
+.titleSummary{
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+
+.TotalPay{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.TotalPay div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.pay{
+    display: flex;
+    justify-content: space-between;
+    margin: 1.5rem 0;
+    font-weight: 600;
+}
+
+hr{
+    border: 0;
+    margin-top: 1rem;
+    border-bottom: 1px solid #e3e3e3;
+}
+
+
+.buttonGroup{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+
+.buttonGroup .blackbtn{
+    padding: 1rem;
+    border-radius: 2rem;
+    border: 0;
+    background-color: #111111;
+    color: white;
+    transition: all ease-in-out .3s;
+    cursor: pointer;
+    font-weight: 600;
+    width: 100%;
+}
+
+
+.buttonGroup .blackbtn:hover{
+    transform: scale(1.02);
+}
+
+.buttonGroup .paypal{
+    padding: 1rem;
+    border-radius: 2rem;
+    border: 1px solid #757575;
+    background-color: #f5f5f5;
+    color: white;
+    transition: all ease-in-out .3s;
+    cursor: pointer;
+    font-weight: 600;
+    width: 100%;
+}
+
+.buttonGroup .paypal span:first-child{
+    color: #21468c;
+    font-size: 1.02rem;
+}
+
+.buttonGroup .paypal span:last-child{
+    color: #019de1;
+    font-size: 1.02rem;
+}
+
+.buttonGroup .paypal:hover{
+    transform: scale(1.02);
+}
+
+.customHr{
+    border: 0;
+    border-bottom: 1px solid #e3e3e3;
+    width: 91%;
+    margin: 2rem auto 0 auto;
+}
+
+
+.contentSend{
+    margin-top: 6rem;
+}
+
+
+.send{
+    font-weight: 600;
+}
+
+.underline2{
+    text-decoration: underline;
+    margin-left: .5rem;
+}
+
+
+.favorite{
+    width: 92%;
+    margin: 2rem auto 0 auto;
+}
+
+.favorite .title2{
+    font-weight: 700;
+    font-size: 2rem;
+    display: block;
+    padding-bottom: 1.5rem;
+}
+
+
+.underline3{
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+
+@media screen and (max-width: 960px){
+    .summary{
+        display: initial;
+    }
+    
+    img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .titleSummary{
+        display: block;
+        margin-top: 3rem;
+    }
+}

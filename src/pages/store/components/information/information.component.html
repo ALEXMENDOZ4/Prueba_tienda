@@ -1,0 +1,38 @@
+<div>
+  <span>Calzado para hombre</span>
+  <div class="contentValue">
+    <span class="title">Nike Air Force 1 '07</span>
+    <span class="price">$1999</span>
+  </div>
+  <div *ngIf="windowsWidth <= 1000">
+    <app-photos></app-photos>
+  </div>
+  <div class="images">
+    <img src="assets/photos/item2.png" alt="item2" />
+    <img src="assets/photos/item1.png" alt="item1" />
+  </div>
+  <div class="sizeInformation">
+    <span>Selecciona tu talla</span>
+    <span>Guía de tallas</span>
+  </div>
+  <div class="sizesCustom">
+    <div *ngFor="let size of sizes" [ngClass]="{ 'active-item': size.active, 'inactive-item': !size.active }">{{ size.title }}</div>
+  </div>
+  <button (click)="view()">Agregar a la bolsa de compra</button>
+  <button class="favorite">
+    <span>Favoritos</span>
+    <span class="material-symbols-outlined"> favorite </span>
+  </button>
+  <div class="description">
+    <span>Envío</span>
+    <span>Para obtener información de envío precisa</span>
+    <span class="stripe">Editar ubicacion</span>
+    <span>
+        Básquetbol en el parque, barbacoas y sol de domingo. El resplandor sobrevive con el calzado Nike Air Force 1'07, un modelo clasico del básquetbol,
+        este OG le da un toque novedoso al calzado de siempre: impecables capas de cuero con puntadas perfectas, en un blanco clásico con la cantidad perfecta de destellos para que brilles.
+    </span>
+    <span>- Color que se muestra: Blanco/Blanco</span>
+    <span>- Estilo: 315122-111</span>
+    <span class="stripe2">Ver datos del producto</span>
+  </div>
+</div>

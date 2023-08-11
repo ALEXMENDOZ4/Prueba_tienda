@@ -1,0 +1,27 @@
+.contentMain{
+    width: 96%;
+    margin: 0 auto;
+}
+
+
+.contentFootwear{
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    width: 90%;
+    margin: 2rem auto 0 auto;
+    max-width: 100%;
+}
+
+
+.slider{
+    width: 90%;
+    margin: 2rem auto 0 auto;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .photos{
+        display: none;
+    }
+}
